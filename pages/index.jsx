@@ -1,7 +1,16 @@
-export default function Home() {
+const Page = () => {
+
     return (
         <>
-           <h1>TEST</h1> 
+            Hello World
         </>
-    )
-}
+    );
+};
+
+Page.getInitialProps = async (ctx) => {
+    return {
+        title: "Hello World",
+    };
+};
+
+export default Page;
